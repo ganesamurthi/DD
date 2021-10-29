@@ -1,0 +1,175 @@
+{% extends 'Lpage/base.html'%}
+{% load static %}
+{% block title %}
+  <title>DreamDoors - Your home buying companion</title>
+{% endblock %}
+{% block content %}
+				{% if message %}
+				<div class="banner">
+					<p>{{ message }}</p>
+				</div>
+				{% endif %}
+				<div class="banner" >
+					<div class="banner-content">
+						<div class="container">
+							<div class="cta">
+								<a href="#">
+									<a href="#" class="arrow-button"><i class="fa fa-angle-right"></i></a>
+									<h2>Subscribe now for a dream home buying experience</h2>
+									<small>By subscribing you agree to recieve calls from our advisor</small>
+								</a>
+							</div>
+
+							<div class="subscribe-form">
+								<form method="POST" action='.'>
+									{% csrf_token %}
+									<small class="form-subtitle">Find your dream home</small>
+									<h2 class="form-title">New Apartment</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, dicta. Molestiae voluptatem laudantium tempora nemo vitae</p>
+
+									<div class="control">
+										<input type="text" name="name" placeholder="Your name...">
+										<i class="fa fa-user"></i>
+									</div>
+									<div class="control">
+										<input type="text" name="email" placeholder="Email address...">
+										<i class="fa fa-envelope"></i>
+									</div>
+									<div class="control">
+										<input type="text" name="mobile" placeholder="Phone number...">
+										<i class="fa fa-phone"></i>
+									</div>
+									<input type="submit" value="Subscribe Now">
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header> <!-- .site-header -->
+
+			<main class="main-content">
+				<div class="fullwidth-block">
+					<div class="container">
+						<h2 class="section-title">What is so great in our apartments?</h2>
+						<div class="row">
+							<div class="col-md-5">
+								<ul class="arrow-list">
+									<li>Nemo enim ipsam voluptatem voluptas</li>
+									<li>Quisquam dolorem ipsum quia dolor sit</li>
+									<li>Consectetur adipisci velit sed quia</li>
+									<li>Numquam eius modi tempora incidunt</li>
+									<li>Dolor in reprehenderit in voluptate velit</li>
+									<li>in reprehenderit in voluptate</li>
+								</ul>
+							</div>
+							<div class="col-md-7">
+								<div class="feature-slider">
+									<ul class="slides">
+										<li>
+											<figure>
+												<img src="static/Lpage/assets/images/feature-1.jpg" alt="Feature 1">
+												<figcaption>
+													<h3 class="feature-title">Neque porro quisquam est dolorem ipsum</h3>
+													<small class="feature-desc">Velit esse cillum dolore pariatur</small>
+												</figcaption>
+											</figure>
+										</li>
+										<li>
+											<figure>
+												<img src="static/Lpage/assets/images/feature-2.jpg" alt="Feature 2">
+												<figcaption>
+													<h3 class="feature-title">Dolor in reprehenderit in voluptate velit</h3>
+													<small class="feature-desc">Reprehenderit in voluptate velit</small>
+												</figcaption>
+											</figure>
+										</li>
+										<li>
+											<figure>
+												<img src="static/Lpage/assets/images/feature-3.jpg" alt="Feature 3">
+												<figcaption>
+													<h3 class="feature-title">Quisquam dolorem ipsum quia dolor sit</h3>
+													<small class="feature-desc">Quia dolor ipsum quia dolor sit</small>
+												</figcaption>
+											</figure>
+										</li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="fullwidth-block" data-bg-color="#f0f0f0">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-3 col-sm-6">
+								<div class="feature">
+									<div class="feature-icon"><img src="static/Lpage/assets/images/icon-location.png" alt=""></div>
+									<h3 class="feature-title">Perfect location</h3>
+									<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="feature">
+									<div class="feature-icon"><img src="static/Lpage/assets/images/icon-golf.png" alt=""></div>
+									<h3 class="feature-title">Golf course</h3>
+									<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="feature">
+									<div class="feature-icon"><img src="static/Lpage/assets/images/icon-valet.png" alt=""></div>
+									<h3 class="feature-title">Private valet</h3>
+									<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.</p>
+								</div>
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="feature">
+									<div class="feature-icon"><img src="static/Lpage/assets/images/icon-phone.png" alt=""></div>
+									<h3 class="feature-title">24/h infoline</h3>
+									<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="post-list">
+							<article class="post">
+								<figure class="feature-image" data-bg-image="static/Lpage/assets/images/figure-1.jpg"></figure>
+								<div class="post-detail">
+									<h2 class="entry-title">Lorem porro quisquam dolorem</h2>
+									<p>Omnis iste natus error sit voluptatem doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem quia.</p>
+									<a href="#" class="button">See more</a>
+								</div>
+							</article>
+							<article class="post">
+								<figure class="feature-image" data-bg-image="static/Lpage/assets/images/figure-1.jpg"></figure>
+								<div class="post-detail">
+									<h2 class="entry-title">Lorem porro quisquam dolorem</h2>
+									<p>Omnis iste natus error sit voluptatem doloremque laudantium totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem quia.</p>
+									<a href="#" class="button">See more</a>
+								</div>
+							</article>
+
+						</div>
+
+
+					</div>
+				</div>
+
+			</main>
+{% endblock %}
+			<footer class="site-footer">
+				<div class="container">
+					<p>Copyright 2014 DreamDoors. All rights reserved</p>
+				</div>
+			</footer>
+		</div>
+
+		<script src="static/Lpage/js/jquery-1.11.1.min.js"></script>
+		<script src="static/Lpage/js/plugins.js"></script>
+		<script src="static/Lpage/js/app.js"></script>
+
+	</body>
+
+</html>
